@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Matthew's Grade Calculator</title>
+    <script src= "script.js"></script>
+    <link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+<div id="content">
+
+    <h1> Current Grade and Final Exam Grade Calculator </h1>
+
+    <h2> Separate individual score percentages with a comma and without spaces (ex: 72,77,85).</h2>
+
+<table style="width:50%" align="center">
+    <tr>
+        <th>Category</th>
+        <th>Grades</th>
+        <th>Weight%</th>
+    </tr>
+    <tr>
+        <td> Homework </td>
+        <td><div> <input type="text" id="homeworkGrade" placeholder = "ex: 80,90,85" value = "80,90"/></div></td>
+        <td><div>  <input type="text" id="homeworkWeight" placeholder = "ex: 20" value = "20"/></div></td>
+    </tr>
+    <tr>
+        <td> Quizzes </td>
+        <td><div> <input type="text" id="quizGrade"placeholder = "ex: 75,60,100" value = "75,60,100"/></div></td>
+        <td><div> <input type="text" id="quizWeight"placeholder = "ex: 20" value = "20"/></div></td>
+    </tr>
+    <tr>
+        <td>Tests</td>
+        <td><div> <input type="text" id="testGrade"placeholder = "ex: 92,90,85" value = "92,90,85"/></div></td>
+        <td><div> <input type="text" id="testWeight" placeholder = "ex: 10" value = "10"/></div></td>
+    </tr>
+    <tr>
+        <td>Projects</td>
+        <td><div> <input type="text" id="projectGrade"placeholder = "ex: 83,89,94" value = "83,89,94"/></div></td>
+        <td><div> <input type="text" id="projectWeight"placeholder = "ex: 20" value = "20"/></div></td>
+    </tr>
+    <tr>
+        <td>Participation</td>
+        <td><div> <input type="text" id="participationGrade"placeholder = "ex: 68,90,85" value = "68,90,85"/></div></td>
+        <td><div> <input type="text" id="participationWeight"placeholder = "ex: 10" value = "10"/></div></td>
+    </tr>
+</table>
+    <table style="width:50%" align="center">
+    <tr>
+        <td>Desired Grade in Class</td>
+        <td>Weight(%) of Final</td>
+    </tr>
+    <tr>
+        <td><div> <input type="text" id="gradeWanted" placeholder = "ex: 90" value = "80"/></div></td>
+        <td><div> <input type="text" id="finalWeight" placeholder = "ex: 20" value = "20"/></div></td>
+    </tr>
+</table>
+
+
+
+<button onclick = "currentgrade()"!> Calculate Current Grade
+</button>
+
+<button onclick = "finalgrade()"!> Calculate Final Grade Needed
+
+</button>
+
+<button onclick = "reset()"!> Reset
+
+</button>
+
+    <div id="nowGrade"></div>
+
+    <div id ="needGrade"></div>
+
+</body>
+</html>
